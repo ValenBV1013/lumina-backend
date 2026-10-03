@@ -1,0 +1,1 @@
+web: gunicorn lumina_backend.wsgi
