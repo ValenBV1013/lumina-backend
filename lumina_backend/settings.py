@@ -134,3 +134,12 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# Email Configuration (Gmail SMTP)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'electro.lumina.m@gmail.com'  # Reemplaza con tu dirección de Gmail
+EMAIL_HOST_PASSWORD = 'mpoxeopigavjxiyd'  # Reemplaza con la Contraseña de Aplicación de Google
+DEFAULT_FROM_EMAIL = 'Lumina Festival <electro.lumina.m@gmail.com>'
