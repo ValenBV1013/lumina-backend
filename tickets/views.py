@@ -35,7 +35,7 @@ class TicketPurchaseViewSet(viewsets.ModelViewSet):
             'total_amount': total_amount,
         }
 
-        # 4. Renderizar y enviar de forma segura protegiendo el hilo principal
+# 4. Renderizar y enviar de forma ultra-segura atrapando BaseException
         try:
             html_content = render_to_string('tickets/ticket_confirmation.html', context)
             text_content = strip_tags(html_content)
@@ -44,14 +44,14 @@ class TicketPurchaseViewSet(viewsets.ModelViewSet):
             msg = EmailMultiAlternatives(
                 subject=subject,
                 body=text_content,
-                from_email=None,  # Toma DEFAULT_FROM_EMAIL de settings.py
+                from_email=None,
                 to=[user_email]
             )
             msg.attach_alternative(html_content, "text/html")
             msg.send()
-        except Exception as e:
-            # Si el puerto SMTP está bloqueado en la nube, se registra en consola pero la compra no falla
-            print(f"Aviso: El correo no pudo enviarse debido a restricciones de red: {e}")
+        except BaseException as e:
+            # Esto atrapa cualquier fallo de red o cierre forzoso de Render sin romper la compra
+            print(f"Aviso: SMTP bloqueado en Render (Gmail no disponible por red): {e}")
 
         # 5. Retornar la respuesta estándar del ModelViewSet de inmediato
         headers = self.get_success_headers(serializer.data)
