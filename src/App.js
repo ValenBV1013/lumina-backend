@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import FestivalPoster from './components/FestivalPoster';
 import Lineup from './components/Lineup';
 import Activities from './components/Activities';
 import Food from './components/Food';
@@ -21,6 +22,7 @@ export default function App() {
           <Navbar />
           <FloatingNotes />
           <Hero />
+          <FestivalPoster />
           <Lineup />
           <Activities />
           <Food />
