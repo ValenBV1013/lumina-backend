@@ -118,7 +118,7 @@ export default function Food() {
   ];
 
   return (
-    <section id="gastronomy" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
+    <section id="food" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
