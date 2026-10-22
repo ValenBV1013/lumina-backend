@@ -11,7 +11,7 @@ Welcome to the official web repository for **Lumina Festival 2037**, an immersiv
 ## 🌐 Live Website
 
 Check out the live application here:
-👉 **[Lumina Festival 2037 Live Web App](https://luminafestival2037.vercel.app/)**
+👉 **[Lumina Festival 2037 Live Web App](https://lumina-festival-frontend.onrender.com/)**
 
 ---
 
