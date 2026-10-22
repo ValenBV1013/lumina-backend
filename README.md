@@ -1,6 +1,6 @@
 # ⚡ Lumina Festival 2037 — Web Landing Page
 
-[![Live Demo](https://img.shields.io/badge/DEMO-ONLINE-00f0ff?style=for-the-badge&logo=vercel&logoColor=black)](https://luminafestival2037.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/DEMO-ONLINE-00f0ff?style=for-the-badge&logo=vercel&logoColor=black)](https://lumina-festival-frontend.onrender.com/)
 
 ![Lumina Festival Banner](https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80)
 
